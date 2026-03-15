@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
@@ -9,16 +10,51 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxthub/core'
   ],
-
   devtools: {
     enabled: true
   },
 
   css: ['~/assets/css/main.css'],
 
+  ui: {
+    colorMode: false
+  },
+
   compatibilityDate: '2024-11-01',
+
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ],
+      crawlLinks: true
+    }
+  },
+
+  hub: {
+    blob: true
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit'
+      ]
+    }
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  },
 
   fonts: {
     provider: 'google'
@@ -32,44 +68,15 @@ export default defineNuxtConfig({
     defaultLocale: 'ja'
   },
 
-  ui: {
-    colorMode: false
-  },
-
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
-    }
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
-
   studio: {
-    dev: false,
+    media: {
+      external: true
+    },
     repository: {
       provider: 'github',
       owner: 'YutaInouePH',
       repo: 'kendogu-esaki',
       branch: 'main'
-    }
-  },
-
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit'
-      ]
     }
   }
 })
