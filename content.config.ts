@@ -104,16 +104,14 @@ export default defineContentConfig({
     }),
     about: defineCollection({
       type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema())
-      })
+      source: 'about.md',
+      schema: createBaseSchema()
     }),
     item: defineCollection({
       type: 'page',
       source: 'item/*.md',
       schema: z.object({
+        // category: z.enum([]).optional(),
         date: z.date(),
         featured: z.boolean().default(false),
         order: z.number().optional(),
