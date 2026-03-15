@@ -1,5 +1,5 @@
 ---
-title: "From Mockup to Market: My End-to-End Product Design Process"
+title: "ABCD From Mockup to Market: My End-to-End Product Design Process"
 author:
   name: Emma Thompson
   avatar:
@@ -9,6 +9,9 @@ date: 2025-04-23
 description: A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
 image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 minRead: 8
+seo:
+  title: "From Mockup to Market: My End-to-End Product Design Process"
+  description: A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
 ---
 
 Creating successful digital products isn't about following a rigid formula—it's about developing a flexible framework that adapts to the unique challenges of each project. After refining my approach across dozens of products, I've developed a process that consistently delivers results while leaving room for creativity and iteration.
