@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
@@ -11,7 +10,9 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt',
     'nuxt-studio',
-    '@nuxthub/core'
+    '@nuxthub/core',
+    '@vercel/analytics',
+    '@vercel/speed-insights'
   ],
   devtools: {
     enabled: true
