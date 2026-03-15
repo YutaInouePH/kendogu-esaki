@@ -32,6 +32,10 @@ export default defineNuxtConfig({
     defaultLocale: 'ja'
   },
 
+  ui: {
+    colorMode: false
+  },
+
   nitro: {
     prerender: {
       routes: [
