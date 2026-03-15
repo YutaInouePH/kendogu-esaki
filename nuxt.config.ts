@@ -29,7 +29,7 @@ export default defineNuxtConfig({
       { code: 'ja', name: 'Japanese' }
     ],
     strategy: 'prefix_except_default',
-    defaultLocale: 'ja',
+    defaultLocale: 'ja'
   },
 
   nitro: {
@@ -47,6 +47,16 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  studio: {
+    dev: false,
+    repository: {
+      provider: 'github',
+      owner: 'YutaInouePH',
+      repo: 'kendogu-esaki',
+      branch: 'main'
     }
   }
 })
