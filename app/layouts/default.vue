@@ -1,29 +1,61 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('navation', () => {
-  return queryCollectionNavigation('aside')
-    .order('order', 'DESC')
-})
+import type { ContentNavigationLink } from '@nuxt/ui'
+
+const navigation = ref<ContentNavigationLink[]>([
+  {
+    title: 'Guide',
+    icon: 'i-lucide-book-open',
+    path: '#getting-started',
+    children: [
+      {
+        title: 'Introduction',
+        path: '#introduction',
+        active: true
+      },
+      {
+        title: 'Installation',
+        path: '#installation'
+      }
+    ]
+  },
+  {
+    title: 'Composables',
+    icon: 'i-lucide-database',
+    path: '#composables',
+    children: [
+      {
+        title: 'defineShortcuts',
+        path: '#defineshortcuts'
+      },
+      {
+        title: 'useModal',
+        path: '#usemodal'
+      }
+    ]
+  }
+])
 </script>
 
 <template>
   <UMain>
-    <AppHeader :links="navLinks" />
-    <UPage>
-      <template #left>
-<!--        <UPageAside>-->
-<!--          <UContentNavigation-->
-<!--            :key="navigationKey"-->
-<!--            :collapsible="false"-->
-<!--            highlight-->
-<!--            :ui="{-->
-<!--              linkTrailingBadge: 'font-semibold uppercase'-->
-<!--            }"-->
-<!--          />-->
-<!--        </UPageAside>-->
-      </template>
+    <UContainer>
+      <UPage>
+        <template #left>
+          <UPageAside>
+            <UContentNavigation
+              :key="navigationKey"
+              :collapsible="false"
+              :navigation="navigation"
+              highlight
+              :ui="{
+                linkTrailingBadge: 'font-semibold uppercase'
+              }"
+            />
+          </UPageAside>
+        </template>
 
-      <slot />
-      <AppFooter />
-    </UPage>
+        <slot />
+      </UPage>
+    </UContainer>
   </UMain>
 </template>

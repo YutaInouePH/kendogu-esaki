@@ -5,7 +5,6 @@
 
 :root {
   --default-font-family: 'Libre Caslon Text','Noto Serif JP',serif;
-  --ui-container: var(--container-4xl);
 
   ::selection {
     color: #282a30;

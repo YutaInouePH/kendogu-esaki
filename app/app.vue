@@ -43,9 +43,17 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 
 <template>
   <UApp>
+    <div class="flex">
+      <div class="flex-1 min-w-0">
+        <AppHeader :links="navLinks" />
+      </div>
+    </div>
+
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+
+    <AppFooter />
 
     <ClientOnly>
       <LazyUContentSearch

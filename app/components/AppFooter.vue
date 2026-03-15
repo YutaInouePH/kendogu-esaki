@@ -4,8 +4,10 @@ const { footer } = useAppConfig()
 
 <template>
   <UFooter
-    class="z-10 bg-default"
-    :ui="{ left: 'text-muted text-xs' }"
+    class="z-10 bg-[#232323]"
+    :ui="{
+      left: 'text-muted text-sm'
+    }"
   >
     <template #left>
       {{ footer.credits }}
