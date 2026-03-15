@@ -29,10 +29,10 @@ const createAuthorSchema = () => z.object({
   avatar: createImageSchema().optional()
 })
 
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
+// const createTestimonialSchema = () => z.object({
+//   quote: z.string(),
+//   author: createAuthorSchema()
+// })
 
 export default defineContentConfig({
   collections: {
