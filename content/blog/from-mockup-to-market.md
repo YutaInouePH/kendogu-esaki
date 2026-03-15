@@ -7,11 +7,19 @@ author:
     alt: Emma Thompson
 date: 2025-04-23
 description: A detailed breakdown of my iterative design methodology, from initial research to final handoff, with practical tips for designers at every stage.
-image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: /hero/random-1.avif
 minRead: 8
 ---
 
 Creating successful digital products isn't about following a rigid formula—it's about developing a flexible framework that adapts to the unique challenges of each project. After refining my approach across dozens of products, I've developed a process that consistently delivers results while leaving room for creativity and iteration.
+
+::item-carousel
+---
+items:
+  - https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  - /hero/random-1.avif
+---
+::
 
 In this article, I'll walk through my end-to-end design process, from initial discovery to developer handoff, using my recent work on the EcoTrack application as a case study.
 

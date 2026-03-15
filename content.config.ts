@@ -81,7 +81,8 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'projects.yml' },
-        { include: 'blog.yml' }
+        { include: 'blog.yml' },
+        { include: 'item.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())
@@ -107,6 +108,16 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema())
+      })
+    }),
+    item: defineCollection({
+      type: 'page',
+      source: 'item/*.md',
+      schema: z.object({
+        date: z.date(),
+        featured: z.boolean().default(false),
+        order: z.number().optional(),
+        image: z.string().nonempty().editor({ input: 'media' })
       })
     }),
     aside: defineCollection({

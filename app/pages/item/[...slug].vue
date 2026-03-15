@@ -6,11 +6,11 @@ import { findPageBreadcrumb } from '@nuxt/content/utils'
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+  queryCollection('item').path(route.path).first()
 )
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+  queryCollectionItemSurroundings('item', route.path, {
     fields: ['description']
   })
 )
@@ -56,11 +56,11 @@ const formatDate = (dateString: string) => {
     <UContainer class="relative min-h-screen">
       <UPage v-if="page">
         <ULink
-          to="/blog"
+          to="/item"
           class="text-sm flex items-center gap-1"
         >
           <UIcon name="lucide:chevron-left" />
-          Blog
+          商品一覧
         </ULink>
         <div class="flex flex-col gap-3 mt-8">
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
@@ -80,7 +80,7 @@ const formatDate = (dateString: string) => {
           <NuxtImg
             :src="page.image"
             :alt="page.title"
-            class="rounded-lg w-full h-75 object-cover object-center"
+            class="w-full h-75 object-contain object-center mx-auto rounded-lg"
           />
           <p class="text-muted text-center max-w-2xl mx-auto">
             {{ page.description }}

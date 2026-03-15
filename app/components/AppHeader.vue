@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <UHeader>
+  <UHeader class="bg-white">
     <template #title>
       <h1>剣道具 えさき</h1>
     </template>

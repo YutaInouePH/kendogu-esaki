@@ -10,6 +10,20 @@ export default defineAppConfig({
     available: true
   },
   ui: {
+    blogPosts: {
+      variants: {
+        orientation: {
+          horizontal: 'lg:grid-cols-4'
+        }
+      }
+    },
+    blogPost: {
+      slots: {
+        image: 'object-contain w-full h-full',
+        date: 'text-xs',
+        title: 'text-md'
+      }
+    },
     colors: {
       primary: 'blue',
       neutral: 'neutral'
@@ -19,6 +33,11 @@ export default defineAppConfig({
         container: 'py-18 sm:py-24 lg:py-32',
         title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
         description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
+      }
+    },
+    prose: {
+      p: {
+        base: 'my-2 leading-7 text-pretty'
       }
     }
   },

@@ -43,7 +43,6 @@ const navigation = ref<ContentNavigationLink[]>([
         <template #left>
           <UPageAside>
             <UContentNavigation
-              :key="navigationKey"
               :collapsible="false"
               :navigation="navigation"
               highlight

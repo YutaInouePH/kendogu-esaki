@@ -19,34 +19,32 @@ useSeoMeta({
   ogDescription: page.value?.seo.description || page.value?.description
 })
 
-const posts = ref<BlogPostProps[]>([
-  {
-    title: 'Nuxt Icon v1',
-    description: 'Discover Nuxt Icon v1!',
-    image: 'https://nuxt.com/assets/blog/nuxt-icon/cover.png',
-    date: '2024-11-25'
-  },
-  {
-    title: 'Nuxt 3.14',
-    description: 'Nuxt 3.14 is out!',
-    image: 'https://nuxt.com/assets/blog/v3.14.png',
-    date: '2024-11-04'
-  },
-  {
-    title: 'Nuxt 3.13',
-    description: 'Nuxt 3.13 is out!',
-    image: 'https://nuxt.com/assets/blog/v3.13.png',
-    date: '2024-08-22'
-  }
-])
+const { data: featuredItems } = await useAsyncData('items', () =>
+  queryCollection('item')
+    .where('featured', '=', true)
+    .order('order', 'DESC')
+    .all()
+)
+
+const posts = computed<BlogPostProps[]>(() => {
+  return featuredItems.value.map((item) => {
+    console.log(item)
+    return {
+      title: item.title,
+      image: item.image,
+      date: item.date,
+      to: item.path
+    }
+  })
+})
 </script>
 
 <template>
   <UPage v-if="page">
     <UPageBody>
       <UBlogPosts :posts="posts" />
+      <LandingBlog :page />
+      <LandingFAQ :page />
     </UPageBody>
-    <LandingBlog :page />
-    <LandingFAQ :page />
   </UPage>
 </template>
