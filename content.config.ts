@@ -118,12 +118,10 @@ export default defineContentConfig({
         image: z.string().nonempty().editor({ input: 'media' })
       })
     }),
-    aside: defineCollection({
-      type: 'page',
-      source: 'aside/**.*',
-      schema: z.object({
-        order: z.number()
-      })
+    category: defineCollection({
+      type: 'data',
+      source: 'category.json',
+      schema: z.object({})
     })
   }
 })

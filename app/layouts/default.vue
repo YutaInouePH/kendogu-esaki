@@ -1,39 +1,17 @@
 <script setup lang="ts">
 import type { ContentNavigationLink } from '@nuxt/ui'
 
-const navigation = ref<ContentNavigationLink[]>([
-  {
-    title: 'Guide',
-    icon: 'i-lucide-book-open',
-    path: '#getting-started',
-    children: [
-      {
-        title: 'Introduction',
-        path: '#introduction',
-        active: true
-      },
-      {
-        title: 'Installation',
-        path: '#installation'
-      }
-    ]
-  },
-  {
-    title: 'Composables',
-    icon: 'i-lucide-database',
-    path: '#composables',
-    children: [
-      {
-        title: 'defineShortcuts',
-        path: '#defineshortcuts'
-      },
-      {
-        title: 'useModal',
-        path: '#usemodal'
-      }
-    ]
+const { data: category } = await useAsyncData('category', () => {
+  return queryCollection('category').first()
+})
+
+const navigation = computed<ContentNavigationLink[]>(() => {
+  if (!category.value) {
+    return []
   }
-])
+
+  return category.value.meta.category
+})
 </script>
 
 <template>

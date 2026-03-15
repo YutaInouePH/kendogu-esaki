@@ -1,0 +1,30 @@
+{
+  "category": [
+    {
+      "title": "Home",
+      "icon": "i-lucide-home",
+      "path": "/"
+    },
+    {
+      "title": "商品",
+      "children": [
+        {
+          "title": "ALL",
+          "path": "/item"
+        },
+        {
+          "title": "螺旋　8㎜刺"
+        },
+        {
+          "title": "螺旋　6㎜クロス刺"
+        },
+        {
+          "title": "螺旋【覇国】　4.5㎜クロス刺"
+        },
+        {
+          "title": "快　6mmクロス刺ジャージ剣道具"
+        }
+      ]
+    }
+  ]
+}
