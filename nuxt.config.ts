@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    'nuxt-studio'
+    'nuxt-studio',
+    '@nuxthub/core'
   ],
 
   devtools: {
@@ -54,7 +55,14 @@ export default defineNuxtConfig({
     }
   },
 
+  hub: {
+    blob: true
+  },
+
   studio: {
+    media: {
+      external: true
+    },
     repository: {
       provider: 'github',
       owner: 'YutaInouePH',
