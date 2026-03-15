@@ -28,7 +28,6 @@ const { data: featuredItems } = await useAsyncData('items', () =>
 
 const posts = computed<BlogPostProps[]>(() => {
   return featuredItems.value.map((item) => {
-    console.log(item)
     return {
       title: item.title,
       image: item.image,
@@ -43,7 +42,7 @@ const posts = computed<BlogPostProps[]>(() => {
   <UPage v-if="page">
     <UPageBody>
       <UBlogPosts :posts="posts" />
-      <LandingBlog :page />
+      <LandingNews :page />
       <LandingFAQ :page />
     </UPageBody>
   </UPage>

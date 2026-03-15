@@ -16,9 +16,8 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
 )
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
-
-const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
+const itemNavigation = computed(() => navigation.value.find(item => item.path === '/item')?.children || [])
+const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(itemNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
 
 if (page.value.image) {
   defineOgImage({ url: page.value.image })

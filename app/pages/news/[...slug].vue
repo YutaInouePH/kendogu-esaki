@@ -6,17 +6,17 @@ import { findPageBreadcrumb } from '@nuxt/content/utils'
 const route = useRoute()
 
 const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+  queryCollection('news').path(route.path).first()
 )
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+  queryCollectionItemSurroundings('news', route.path, {
     fields: ['description']
   })
 )
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
+const blogNavigation = computed(() => navigation.value.find(item => item.path === '/news')?.children || [])
 
 const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
 
@@ -56,11 +56,11 @@ const formatDate = (dateString: string) => {
     <UContainer class="relative min-h-screen">
       <UPage v-if="page">
         <ULink
-          to="/blog"
+          to="/news"
           class="text-sm flex items-center gap-1"
         >
           <UIcon name="lucide:chevron-left" />
-          Blog
+          お知らせ
         </ULink>
         <div class="flex flex-col gap-3 mt-8">
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
