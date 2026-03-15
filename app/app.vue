@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const colorMode = useColorMode()
-
-const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
+const color = 'white'
 
 useHead({
   meta: [
@@ -46,9 +44,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 <template>
   <UApp>
     <NuxtLayout>
-      <UMain class="relative">
-        <NuxtPage />
-      </UMain>
+      <NuxtPage />
     </NuxtLayout>
 
     <ClientOnly>

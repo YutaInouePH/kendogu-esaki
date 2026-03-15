@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    'nuxt-studio'
   ],
 
   devtools: {
@@ -17,6 +18,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2024-11-01',
+
+  fonts: {
+    provider: 'google'
+  },
 
   nitro: {
     prerender: {

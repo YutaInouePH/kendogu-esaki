@@ -3,12 +3,8 @@
 
 @source "../../../content/**/*";
 
-@theme static {
-  --font-sans: 'Public Sans', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
-}
-
 :root {
+  --default-font-family: 'Libre Caslon Text','Noto Serif JP',serif;
   --ui-container: var(--container-4xl);
 
   ::selection {

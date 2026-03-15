@@ -1,12 +1,29 @@
 <script setup lang="ts">
+const { data } = await useAsyncData('navation', () => {
+  return queryCollectionNavigation('aside')
+    .order('order', 'DESC')
+})
 </script>
 
 <template>
-  <div>
-    <UContainer class="sm:border-x border-default pt-10">
-      <AppHeader :links="navLinks" />
+  <UMain>
+    <AppHeader :links="navLinks" />
+    <UPage>
+      <template #left>
+<!--        <UPageAside>-->
+<!--          <UContentNavigation-->
+<!--            :key="navigationKey"-->
+<!--            :collapsible="false"-->
+<!--            highlight-->
+<!--            :ui="{-->
+<!--              linkTrailingBadge: 'font-semibold uppercase'-->
+<!--            }"-->
+<!--          />-->
+<!--        </UPageAside>-->
+      </template>
+
       <slot />
       <AppFooter />
-    </UContainer>
-  </div>
+    </UPage>
+  </UMain>
 </template>

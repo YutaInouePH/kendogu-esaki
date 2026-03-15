@@ -126,6 +126,13 @@ export default defineContentConfig({
         content: z.object({}),
         images: z.array(createImageSchema())
       })
+    }),
+    aside: defineCollection({
+      type: 'page',
+      source: 'aside/**.*',
+      schema: z.object({
+        order: z.number()
+      })
     })
   }
 })
