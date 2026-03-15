@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
+    '@nuxtjs/i18n',
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
@@ -21,6 +22,14 @@ export default defineNuxtConfig({
 
   fonts: {
     provider: 'google'
+  },
+
+  i18n: {
+    locales: [
+      { code: 'ja', name: 'Japanese' }
+    ],
+    strategy: 'prefix_except_default',
+    defaultLocale: 'ja',
   },
 
   nitro: {

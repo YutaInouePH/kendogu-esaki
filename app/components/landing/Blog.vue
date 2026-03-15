@@ -15,8 +15,8 @@ if (!posts.value) {
 
 <template>
   <UPageSection
-    :title="page.blog.title"
-    :description="page.blog.description"
+    :title="page.news.title"
+    :description="page.news.description"
     :ui="{
       container: 'px-0 !pt-0 sm:gap-6 lg:gap-8',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',

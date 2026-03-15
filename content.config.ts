@@ -40,25 +40,7 @@ export default defineContentConfig({
       type: 'page',
       source: 'index.yml',
       schema: z.object({
-        hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
-        }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
-          items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
-            })
-          }))
-        }),
-        testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
+        news: createBaseSchema(),
         faq: createBaseSchema().extend({
           categories: z.array(
             z.object({

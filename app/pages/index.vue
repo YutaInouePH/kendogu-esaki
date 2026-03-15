@@ -46,14 +46,6 @@ const posts = ref<BlogPostProps[]>([
     <UPageBody>
       <UBlogPosts :posts="posts" />
     </UPageBody>
-    <UPageSection
-      :ui="{
-        container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'
-      }"
-    >
-      <LandingAbout :page />
-      <LandingWorkExperience :page />
-    </UPageSection>
     <LandingBlog :page />
     <LandingFAQ :page />
   </UPage>

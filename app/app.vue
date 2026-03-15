@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ja } from '@nuxt/ui/locale'
+
 const color = 'white'
 
 useHead({
@@ -42,7 +44,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="ja">
     <div class="flex">
       <div class="flex-1 min-w-0">
         <AppHeader :links="navLinks" />
