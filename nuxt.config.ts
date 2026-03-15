@@ -58,5 +58,14 @@ export default defineNuxtConfig({
       repo: 'kendogu-esaki',
       branch: 'main'
     }
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
   }
 })
