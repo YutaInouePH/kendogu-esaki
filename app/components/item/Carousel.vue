@@ -41,7 +41,7 @@ function select(index: number) {
         :src="item"
         width="320"
         height="320"
-        class="rounded-lg"
+        class="rounded-lg cursor-pointer"
         loading="lazy"
         @click="itemImageModal.open({ img: item })"
       >
@@ -51,7 +51,7 @@ function select(index: number) {
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="size-11 opacity-25 hover:opacity-100 transition-opacity"
+        class="size-11 opacity-25 cursor-pointer hover:opacity-100 transition-opacity"
         :class="{ 'opacity-100': activeIndex === index }"
         @click="select(index)"
       >
