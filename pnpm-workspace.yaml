@@ -8,3 +8,4 @@ onlyBuiltDependencies:
 
 overrides:
   serialize-javascript@<=7.0.2: '>=7.0.3'
+  socket.io-parser@>=4.0.0 <4.2.6: '>=4.2.6'
