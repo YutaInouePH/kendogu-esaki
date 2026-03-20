@@ -20,7 +20,6 @@ function onSelect(index: number) {
 
 function select(index: number) {
   activeIndex.value = index
-
   carousel.value?.emblaApi?.scrollTo(index)
 }
 </script>
@@ -36,6 +35,7 @@ function select(index: number) {
       :prev="{ onClick: onClickPrev }"
       :next="{ onClick: onClickNext }"
       class="w-full max-w-xs mx-auto"
+      @select="onSelect"
     >
       <img
         :src="item"
@@ -47,7 +47,7 @@ function select(index: number) {
       >
     </UCarousel>
 
-    <div class="flex gap-1 justify-between pt-4 max-w-xs mx-auto">
+    <div class="flex gap-1 justify-start pt-4 max-w-xs mx-auto">
       <div
         v-for="(item, index) in items"
         :key="index"
