@@ -3,6 +3,7 @@ title: 【螺旋】8ミリ刺　面小手垂セット
 description: "仕様: 8ミリ織刺剣道具、アゴヘリ人工皮革"
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/dcc666a04340b4881d60657f56d5221b.jpg?imformat=generic&q=90&im=Resize,width=1280,type=normal
+order: 0
 seo:
   title: 【螺旋】8ミリ刺　面小手垂セット
   description: 【螺旋】全国のトップ選手たちに愛用頂いている、実践型剣道具です！
@@ -41,7 +42,7 @@ items:
 | 面71 | 面垂20センチ | 物見12.5センチ |
 | 面72 | 面垂20センチ | 物見12.5センチ |
 
-### 小手のサイズ
+#### 小手のサイズ
 
 ::item-carousel
 ---
@@ -73,8 +74,13 @@ items:
 
 生地等の色味はロットにより多少変わる場合がありますので写真の色味とは多少異なる場合がございます。
 
-:iframe{allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow-full-screen="true" frame-border="0" height="315" referrer-policy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EgKjfCYYCDs?si=B4e1erurDyijP0UK" title="YouTube video player" width="560"}
+::code-preview
+:iframe{allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow-full-screen="true" frame-border="0" height="315" referrer-policy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EgKjfCYYCDs?si=Ym_gk_WZhCbBmdhP" title="YouTube video player" width="560"}
 
----
+#code
+  :::code-preview
+  :iframe{allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow-full-screen="true" frame-border="0" height="315" referrer-policy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/evekFgRI5lY?si=Dg3GM1EYIDMYsgu_" title="YouTube video player" width="560"}
 
-:iframe{allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow-full-screen="true" frame-border="0" height="315" referrer-policy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/evekFgRI5lY?si=E-KFywIAvUNY8RHH" title="YouTube video player" width="560"}
+  #code
+  :::
+::
