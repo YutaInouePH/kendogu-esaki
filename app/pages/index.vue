@@ -19,7 +19,7 @@ useSeoMeta({
   ogDescription: page.value?.seo.description || page.value?.description
 })
 
-const { data: featuredItems } = await useAsyncData('items', () =>
+const { data: featuredItems } = await useAsyncData('featured-items', () =>
   queryCollection('item')
     .where('featured', '=', true)
     .order('order', 'DESC')
