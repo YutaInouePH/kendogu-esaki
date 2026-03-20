@@ -1,5 +1,6 @@
 ---
 title: 【螺旋～覇国～】1.5分手刺風剣道具　面小手垂セット
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/fb9b140cdc4b9c9d51ba241890003619.jpg?imformat=generic
 order: 0

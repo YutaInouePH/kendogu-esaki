@@ -1,5 +1,6 @@
 ---
 title: 【変わり塗ファイバー胴】紺反胸　黒呂色塗　Lサイズ
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/cc776664db98ccd48d02ac111898f233.jpg?imformat=generic
 ---

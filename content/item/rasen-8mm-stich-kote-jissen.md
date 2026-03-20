@@ -1,5 +1,6 @@
 ---
 title: 【螺旋】8㎜刺　小手　実践型
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/a02a7a20c1437b200149f03b2e5230e2.jpg?imformat=generic
 order: 0

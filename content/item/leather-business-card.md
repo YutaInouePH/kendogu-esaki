@@ -1,5 +1,6 @@
 ---
 title: クロザン革　名刺入
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/d2bdc10ea67579f5cd5db5e9ff17d60c.jpg?imformat=generic&q=90&im=Resize,width=1280,type=normal
 seo:

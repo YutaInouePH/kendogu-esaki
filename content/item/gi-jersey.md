@@ -1,5 +1,6 @@
 ---
 title: 【高級】ジャージ剣道着
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/d061f560e6839f77f35d751f9dd43ff2.jpg?imformat=generic
 seo:

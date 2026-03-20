@@ -1,5 +1,6 @@
 ---
 title: 8ミリ織刺剣道具　「継」　小手
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/04a1003fa401c2ab2110d2af7018f1d8.jpg?imformat=generic
 seo:

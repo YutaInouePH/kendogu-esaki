@@ -1,5 +1,6 @@
 ---
 title: 【螺旋】8ミリ刺　垂
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/500f9704840ae1a243118af686e63eb7.jpg?imformat=generic
 order: 0

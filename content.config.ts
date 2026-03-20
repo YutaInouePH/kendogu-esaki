@@ -85,10 +85,10 @@ export default defineContentConfig({
       source: 'item/*.md',
       schema: z.object({
         // category: z.enum([]).optional(),
-        date: z.date(),
+        date: z.date().optional(),
         featured: z.boolean().default(false),
         order: z.number().optional(),
-        image: z.string().nonempty().editor({ input: 'media' })
+        image: z.string().nonempty().editor({ input: 'media' }).optional()
       })
     }),
     category: defineCollection({

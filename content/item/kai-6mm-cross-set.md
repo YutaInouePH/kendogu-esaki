@@ -1,5 +1,6 @@
 ---
 title: 【快】6ミリクロスジャージ剣道具　面小手垂セット
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/9efb95e5336a14aa9668e3f400b5d7ab.jpg?imformat=generic
 seo:

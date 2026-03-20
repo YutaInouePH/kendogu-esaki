@@ -1,5 +1,6 @@
 ---
 title: 【武州】6ミリ十字刺織刺剣道具　小手
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/e963db5d88e88992fcb3b01be5bde265.jpg?imformat=generic
 seo:

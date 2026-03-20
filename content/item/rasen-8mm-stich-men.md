@@ -1,5 +1,6 @@
 ---
 title: 【螺旋】8ミリ刺　面
+date: 2026-03-05
 description: "仕様: 8ミリ織刺剣道具、アゴヘリ人工皮革"
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/37a8c5d813c536dee3059374bb6114ae.jpg?imformat=generic

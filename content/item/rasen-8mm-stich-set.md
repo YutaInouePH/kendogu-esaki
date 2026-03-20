@@ -1,5 +1,6 @@
 ---
 title: 【螺旋】8ミリ刺　面小手垂セット
+date: 2026-03-05
 description: "仕様: 8ミリ織刺剣道具、アゴヘリ人工皮革"
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/dcc666a04340b4881d60657f56d5221b.jpg?imformat=generic&q=90&im=Resize,width=1280,type=normal

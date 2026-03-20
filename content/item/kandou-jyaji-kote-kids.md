@@ -1,5 +1,6 @@
 ---
 title: 【感動】ジャージ小手　子供用
+date: 2026-03-05
 featured: false
 image: https://baseec-img-mng.akamaized.net/images/item/origin/8bba9d91931f33bd060ce21292228815.jpg?imformat=generic
 seo:
