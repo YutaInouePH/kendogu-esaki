@@ -1,7 +1,7 @@
 ---
 title: 【螺旋】8ミリ刺　垂
 featured: false
-image: ""
+image: https://baseec-img-mng.akamaized.net/images/item/origin/500f9704840ae1a243118af686e63eb7.jpg?imformat=generic
 order: 0
 seo:
   title: 【螺旋】8ミリ刺　垂
